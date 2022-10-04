@@ -1,6 +1,5 @@
 .client {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .client-conteiner {
   @extend %conteiner;
@@ -17,6 +16,8 @@
 .client-list {
   @extend %reset;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   &__item {
     width: 170px;

@@ -446,8 +446,7 @@
 }
 
 .client {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 .client-conteiner__title {
@@ -461,6 +460,8 @@
 
 .client-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .client-list__item {
