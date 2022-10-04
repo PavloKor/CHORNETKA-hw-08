@@ -1,6 +1,5 @@
 .about {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -8,6 +7,7 @@
   
   &__conteiner {
     @extend %conteiner;
+    
   }
   &__title {
     @extend %reset;
@@ -49,17 +49,13 @@
       }
   }
 }
-.about-list__item:not(:last-child) {
-  margin-bottom: 30px;
-
-}
 .about-list__item {
-  @media screen and (max-width:768px) {
-    margin-bottom: 30px;
+  @media screen and (max-width:1199px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
-
-  @media screen and (min-width:768px) {
-    /* width: 47%; */
+  @media screen and (min-width:768px) { 
     width: calc((100% - 2 * 30px)/2);
   }
 }

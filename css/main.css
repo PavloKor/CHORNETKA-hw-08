@@ -272,8 +272,7 @@
 }
 
 .about {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .about {
@@ -322,18 +321,13 @@
   }
 }
 
-.about-list__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .about-list__item {
+@media screen and (max-width: 1199px) {
+  .about-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .about-list__item {
-    /* width: 47%; */
     width: calc((100% - 60px) / 2);
   }
 }
