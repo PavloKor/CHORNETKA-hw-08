@@ -3,13 +3,18 @@
 }
 .header {
   background-color: $main-bcg-cl;
-  padding: 24px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 768px) {
+    padding: 25px 0;
+    
+  }
 }
 .header-conteiner {
   @extend %conteiner;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header-logo {
   @extend %resetlink;
@@ -20,6 +25,33 @@
 }
 .accent {
   color: $accent-txt-cl;
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0%;
+  padding: 0%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.menu-button:hover .icon-close,
+.menu-button:focus .icon-close {
+  fill: $accent-txt-cl;
+}
+.icon-close {
+  transition: fill $perehid;
 }
 .nav {
   margin-left: 93px;

@@ -30,8 +30,14 @@
         <a class="header-logo" href="./index.html" lang="en">
           <span class="accent">Web</span>Studio
         </a>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню" aria-expanded="false">
+            <use class="icon-close" href="./images/icons.svg#icon-close_40px"></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
         <!--Навігація-->
-        <nav class="nav">
+        <!-- <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-item">
               <a class="link-nav link active current" href="index.html">Студія</a>
@@ -43,9 +49,9 @@
               <a class="link-nav link" href="">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <!--правка 1-->
-        <ul class="list-contact">
+        </nav> -->
+        <!--Контакти-->
+        <!-- <ul class="list-contact">
           <li class="contact-item">
             <a
               class="link-contact"
@@ -67,18 +73,18 @@
               +38 096 111 11 11
             </a>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </header>
     <!--Main section(правка 3)(правка 2.1)-->
     <main>
       <!--Шапка(Figma) правка 2-->
-      <section class="section-slogan">
+      <!-- <section class="section-slogan">
         <div class="section-slogan__conteiner">
           <h1 class="section-slogan__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="section-slogan__btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section>
+      </section> -->
       <!--Особливості (правка 4)-->
       <section class="about">
         <div class="about__conteiner">
@@ -130,10 +136,10 @@
         </div>
       </section>
       <!--Чим ми займаємось-->
-      <section class="work">
+      <!-- <section class="work">
         <div class="work-conteiner">
           <h2 class="work-conteiner__title">Чим ми займаємося</h2>
-          <!--Зображення (правка 5)-->
+          
           <ul class="work-list">
             <li class="work-list__group">
               <div class="work-list__img"><img src="./images/studio/box1.png" alt="1" width="370" /></div>
@@ -149,15 +155,15 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Наша команда-->
       <section class="team">
-        <div class="team-conteiner">
-          <h2 class="team-conteiner__title">Наша команда</h2>
-          <!--Фото з підписами (правка 6)-->
+        <!-- <div class="team-conteiner">
+          <h2 class="team-conteiner__title">Наша команда</h2> -->
+          
           <ul class="team-list">
             <!--Працівник 1-->
-            <li class="team-list__item">
+            <!-- <li class="team-list__item">
               <img
                 class="team-list__img"
                 src="./images/team/img1.jpeg"
@@ -222,9 +228,9 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> -->
             <!--Працівник 2-->
-            <li class="team-list__item">
+            <!-- <li class="team-list__item">
               <img class="team-list__img" src="./images/team/img2.jpeg" alt="Ольга Рєпіна" width="270" />
               <div class="team-list__desc">
                 <h3 class="team-desc__name">Ольга Рєпіна</h3>
@@ -284,9 +290,9 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> -->
             <!--Працівник 3-->
-            <li class="team-list__item">
+            <!-- <li class="team-list__item">
               <img
                 class="team-list__img"
                 src="./images/team/img3.jpeg"
@@ -351,9 +357,9 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> -->
             <!--Працівник 4-->
-            <li class="team-list__item">
+            <!-- <li class="team-list__item">
               <img
                 class="team-list__img"
                 src="./images/team/img4.jpeg"
@@ -418,12 +424,12 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
       <!--Постійні клієнти-->
-      <section class="client">
+      <!-- <section class="client">
         <div class="client-conteiner">
           <h2 class="client-conteiner__title">Постійні клієнти</h2>
           <ul class="client-list">
@@ -471,14 +477,14 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--Підвал-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__conteiner">
         <div class="footer-address">
           <a class="footer-address__logo" href=""> <span class="accent">Web</span>Studio</a>
-          <!--правка 7-->
+          
           <address class="address">
             <p class="address__desc">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="address-list">
@@ -570,7 +576,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
@@ -644,6 +650,7 @@
 
       <!--JS Scripte-->
       <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
       <!--Скрипт для зручності-->
       <script>
         (() => {
