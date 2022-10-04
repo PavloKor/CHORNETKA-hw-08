@@ -30,26 +30,53 @@
         <a class="header-logo" href="./index.html" lang="en">
           <span class="accent">Web</span>Studio
         </a>
-        <button type="button" class="menu-button" data-menu-button>
+        <button type="button" class="menu-button" data-menu-button data-modal-open>
           <svg width="40" height="40" aria-label="Перемикач мобільного меню" aria-expanded="false">
             <use class="icon-close" href="./images/icons.svg#icon-close_40px"></use>
             <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
           </svg>
         </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="backdrop__modal">
+            <button class="backdrop__btn" type="button" data-modal-close>
+              <svg class="backdrop__close-icon" width="30" height="30">
+                <use href="./images/icons.svg#close-black"></use>
+              </svg>
+            </button>
+            <nav class="nav">
+                      <ul class="nav-list list">
+                        <li class="nav-item">
+                          <a class="link-nav link active current" href="index.html">Студія</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="link-nav link" href="portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="link-nav link" href="">Контакти</a>
+                        </li>
+                      </ul>
+            </nav>
+            <li class="contact-item">
+              <a class="link-contact" target="_blank" rel="noopener noreferrer" href="e-mail:info@devstudio.com">
+                <svg class="link-contact__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact-item">
+              <a class="link-contact" href="tell:+380961111111">
+                <svg class="link-contact__icon" width="16" height="12">
+                  <use href="./images/icons.svg#vector"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+            </ul>
+          </div>
+        </div>
         <!--Навігація-->
-        <!-- <nav class="nav">
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="link-nav link active current" href="index.html">Студія</a>
-            </li>
-            <li class="nav-item">
-              <a class="link-nav link" href="portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav-item">
-              <a class="link-nav link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav> -->
+        
         <!--Контакти-->
         <!-- <ul class="list-contact">
           <li class="contact-item">
