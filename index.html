@@ -105,6 +105,16 @@
             <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
           </svg>
         </button> -->
+
+        <button 
+          class="menu-btn js-open-menu" 
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu" >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--Main section(правка 3)(правка 2.1)-->
@@ -610,19 +620,19 @@
     </footer> -->
 
     <!--Modal window-->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__modal">
         <button class="backdrop__btn" type="button" data-modal-close>
           <svg class="backdrop__close-icon" width="30" height="30">
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
-        <!--Форма реестрації-->
+        
         
         <form class="form" name="register-form" autocomplete="on" novalidate>
-          <!--Заголовок-->
+          
           <strong class="form__title">Залиште свої дані, ми вам передзвонимо</strong>
-          <!--Дані користувача-->
+          
           <div class="form-group-modal">
 
 
@@ -661,7 +671,7 @@
             </label>
           </div>
 
-          <!--Умови-->
+          
           <label class="form-agreement">
             <input class="form-agreement__checkbox visually-hidden" type="checkbox">
             <svg class="form-agreement-icons" width="16" height="15">
@@ -678,12 +688,13 @@
           <button class="form-agreement__btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <!--Menu-->
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg width="40" height="40" aria-label="Перемикач мобільного меню" aria-expanded="false">
-          <use class="icon-close" href="./images/icons.svg#icon-close_40px"></use>
+        <svg width="40" height="40">
+        
+          <use class="icon-menu" href="./images/icons.svg#icon-close_40px"></use>
         </svg>
       </button>
     
@@ -693,9 +704,16 @@
         <li><a href="" class="link">Contacts</a></li>
         <li><a href="" class="link">Career</a></li>
       </ul>
-    </div> -->
+    </div>
+
     <!--JS Scripte-->
     <script src="./js/modal.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+      
+    <script defer src="./js/mobile-menu.js"></script>
     
     <!--Скрипт для зручності-->
     <script>

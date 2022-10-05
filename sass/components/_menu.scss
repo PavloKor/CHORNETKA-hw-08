@@ -1,49 +1,26 @@
-.menu-button {
+.menu-btn {
   display: flex;
   align-items: center;
   justify-content: center;
 
   width: 40px;
   height: 40px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
+  padding: 0%;
   margin-left: auto;
+
+  border: none;
+  background-color: transparent;
 
   cursor: pointer;
 }
 .menu-container {
-  position: fixed;
+  
+  
+  /* position: fixed;
   top: 0%;
   left: 0%;
 
   width: 100%;
-  height: 100%;
-
-  background-color: white;
-
-  /* transform: translateY(100%);
-  transition: $perehid */;
+  height: 100%; */
 
 }
-
-/* .menu-button .icon-close {
-  display: none;
-}
-
-.menu-button.is-open .icon-close {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-button:hover .icon-close,
-.menu-button:focus .icon-close {
-  fill: $accent-txt-cl;
-}
-
-.icon-close {
-  transition: fill $perehid;
-} */
