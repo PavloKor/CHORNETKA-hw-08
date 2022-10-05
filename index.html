@@ -30,13 +30,8 @@
         <a class="header-logo" href="./index.html" lang="en">
           <span class="accent">Web</span>Studio
         </a>
-        <button type="button" class="menu-button" data-menu-button data-modal-open>
-          <svg width="40" height="40" aria-label="Перемикач мобільного меню" aria-expanded="false">
-            <use class="icon-close" href="./images/icons.svg#icon-close_40px"></use>
-            <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
-          </svg>
-        </button>
-        <div class="backdrop is-hidden" data-modal>
+        
+        <!-- <div class="backdrop is-hidden" data-modal>
           <div class="backdrop__modal">
             <button class="backdrop__btn" type="button" data-modal-close>
               <svg class="backdrop__close-icon" width="30" height="30">
@@ -74,7 +69,7 @@
             </li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <!--Навігація-->
         
         <!--Контакти-->
@@ -101,6 +96,15 @@
             </a>
           </li>
         </ul> -->
+
+        <!-- <button type="button" class="menu-button js-open-menu" 
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню" aria-expanded="false">
+            
+            <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button> -->
       </div>
     </header>
     <!--Main section(правка 3)(правка 2.1)-->
@@ -674,21 +678,35 @@
           <button class="form-agreement__btn" type="submit">Відправити</button>
         </form>
       </div>
-
-      <!--JS Scripte-->
-      <script src="./js/modal.js"></script>
-      <script src="./js/menu.js"></script>
-      <!--Скрипт для зручності-->
-      <script>
-        (() => {
-          document.querySelector('.register-form').addEventListener('submit', e => {
-            e.preventDefault();
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-          });
-        })();
-      </script>
     </div>
+    <!--Menu-->
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню" aria-expanded="false">
+          <use class="icon-close" href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+    
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div> -->
+    <!--JS Scripte-->
+    <script src="./js/modal.js"></script>
+    
+    <!--Скрипт для зручності-->
+    <script>
+      (() => {
+        document.querySelector('.register-form').addEventListener('submit', e => {
+          e.preventDefault();
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`)
+          );
+        });
+      })();
+    </script>
   </body>
 </html>

@@ -14,7 +14,7 @@
   @extend %conteiner;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .header-logo {
   @extend %resetlink;
@@ -26,7 +26,7 @@
 .accent {
   color: $accent-txt-cl;
 }
-.menu-button {
+/* .menu-button {
   display: inline-flex;
   margin: 0%;
   padding: 0%;
@@ -52,7 +52,7 @@
 }
 .icon-close {
   transition: fill $perehid;
-}
+} */
 .nav {
   margin-left: 93px;
 }
